@@ -9,8 +9,25 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
-    <div><h1>hello </h1></div>
-
+    
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there 👋 <br> How can I help you today?</p>
+            </li>
+            <li class="chat outcoming">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea  placeholder="Enter a message..."></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
 
     <script src="script.js" defer></script>
 </body>
