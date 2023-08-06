@@ -30,13 +30,29 @@ body{
 .chatbot .chatbox{
     height: 510px;
     overflow-y: auto;
-    margin: 15px 20px 70px;
+    margin: 35px 20px 70px;
 }
 
 .chatbox .chat{
     display: flex;
 }
+.chatbox .outgoing{
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.chatbox .incoming span{
+    height: 32px;
+    width: 32px;
+    color: #fff;
+    align-self: flex-end;
+    background: #724ae8;
+    line-height: 32px;
+    border-radius: 4px;
+    text-align: center;
+}
+
 .chatbox .chat p{
+    width: 75%;
     color: #fff;
     background: #724ae8;
     padding: 12px 16px;
@@ -47,5 +63,33 @@ body{
     color: #000;
     background: #f2f2f2;
     border-radius: 10px 10px 10 0px;
+}
+.chatbot .chat-input{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom:0 ;
+    width: 100%;
+    background: #fff;
+    padding: 5px 20px;
+    border-top: 1px solid #ccc;
+}
+.chat-input textarea{
+    height: 55px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    resize: none;
+    padding: 16px 15px 16px 0;
+}
+.chat-input span{
+    color: #724ae8;
+    align-self: flex-end;
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.35rem;
+    cursor: pointer;
+    /* visibility: hidden; */
 
 }
