@@ -6,9 +6,13 @@
     <title>ChatBot</title>
     <link rel="icon" href="#">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.flaticon.com/free-icons/chatbot" title="chatbot icons"></a>">
+    <script src="https://kit.fontawesome.com/218bcd7e7b.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="show-chatbot">
+    <button  class="chatbot-toggler">
+        <span class="material-symbols-outlined fa-regular fa-message "></span>
+        <span class="material-symbols-outlined fa-solid fa-xmark"></span>
+    </button>
     
     <div class="chatbot">
         <header>
@@ -16,7 +20,7 @@
         </header>
         <ul class="chatbox">
             <li class="chat incoming">
-                <span class="material-symbols-outlined">hi</span>
+                <span class="material-symbols-outlined fa-solid fa-robot"></span>
                 <p>Hi there 👋 <br> How can I help you today?</p>
             </li>
             <li class="chat outgoing">
@@ -24,8 +28,8 @@
             </li>
         </ul>
         <div class="chat-input">
-            <textarea  placeholder="Enter a message..."></textarea>
-            <span id="send-btn" class="material-symbols-outlined">send</span>
+            <textarea  placeholder="Enter a message..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined fa-regular fa-paper-plane"></span>
         </div>
     </div>
 
